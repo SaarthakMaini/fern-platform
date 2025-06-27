@@ -130,7 +130,7 @@ export const FernSelectItem = forwardRef<
             intent === "none" || intent === "primary",
           "data-[highlighted]:bg-(color:--amber-a3)": intent === "warning",
           "data-[highlighted]:bg-(color:--green-a3)": intent === "success",
-          "data-[highlighted]:bg-(color:--red-a3)": intent === "danger",
+          "data-[highlighted]:bg-(color:--red-a3)": intent === "error" || intent ==="danger",
         },
         className
       )}
